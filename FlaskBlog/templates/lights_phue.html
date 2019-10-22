@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Control Room</h3>
+<div class="content-section">
+    <h3>All the lights</h3>
+    <a class="btn btn-primary" href="{{url_for('lights_on') }}" role="button">On</a>
+    <a class="btn btn-primary" href="{{url_for('lights_off') }}" role="button">Off</a>
+    <a class="btn btn-primary" href="{{url_for('lights_phue_random') }}" role="button">Change Colour</a>
+    <br>
+    <br>
+    <h3>Specific lights</h3>
+    <a class="btn btn-primary" href="{{url_for('lights_on') }}" role="button">On</a>
+    <a class="btn btn-primary" href="{{url_for('lights_off') }}" role="button">Off</a>
+    <a class="btn btn-primary" href="{{url_for('lights_phue_random') }}" role="button">Change Colour</a>
+</div>
+<div class="content-section">
+    <h3>
+        Temperature
+    </h3>
+</div>
+{% endblock content %}
